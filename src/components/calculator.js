@@ -1,4 +1,6 @@
 import React, { useState } from "react";
+import Button from "./Button";
+import Display from "./Display";
 
 const calculator = () => {
   const [value, setValue] = useState(" ");

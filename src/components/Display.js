@@ -4,4 +4,4 @@ const Display = ({ value }) => {
   <div>{value}</div>;
 };
 
-export default value;
+export default Display;
