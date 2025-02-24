@@ -17,3 +17,8 @@ body {
   justify-content: center;
   font-family: "Roboto", sans-serif;
 }
+.wrapper {
+  background: #f6f8f9;
+  width: 20rem;
+  padding: 2rem;
+}
