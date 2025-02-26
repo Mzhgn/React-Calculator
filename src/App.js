@@ -6,9 +6,9 @@ function App() {
   return (
     <div>
       <Wrapper>
-        <Screen>
-          <h1>Hello</h1>
-        </Screen>
+        <Screen />
+
+        <h1>Hello</h1>
       </Wrapper>
     </div>
   );
