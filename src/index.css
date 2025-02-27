@@ -17,6 +17,11 @@ body {
   justify-content: center;
   font-family: "Roboto", sans-serif;
 }
+
+.screen {
+  height: 4rem;
+  margin-bottom: 4rem;
+}
 .wrapper {
   background: #f6f8f9;
   width: 20rem;
