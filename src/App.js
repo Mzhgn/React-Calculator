@@ -1,6 +1,9 @@
+import { useState } from "react";
 import "./App.css";
 
 function App() {
+  const [display, setDisplay] = useState("");
+  const [expression, setExpression] = useState([]);
   return (
     <div>
       <h1>Hello</h1>
