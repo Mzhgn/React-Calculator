@@ -5,7 +5,9 @@ function App() {
   const [display, setDisplay] = useState("");
   const [expression, setExpression] = useState([]);
 
-  const handleClick = (value) => {};
+  const handleClick = (value) => {
+    setDisplay(value);
+  };
   return (
     <div>
       <h1>Hello</h1>
