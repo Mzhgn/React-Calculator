@@ -7,6 +7,7 @@ function App() {
 
   const handleClick = (value) => {
     setDisplay(value);
+    setExpression([...expression, value]);
   };
   return (
     <div>
