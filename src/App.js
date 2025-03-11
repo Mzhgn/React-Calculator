@@ -9,6 +9,8 @@ function App() {
     setDisplay(value);
     setExpression([...expression, value]);
   };
+  const handleResult = () => {};
+
   return (
     <div>
       <h1>Hello</h1>
