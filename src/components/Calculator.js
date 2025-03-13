@@ -6,3 +6,6 @@ const Calculator = () => {
 const handleClick = (value) => {
   setInput(input + value);
 };
+const handleClear = () => {
+  setInput(" ");
+};
