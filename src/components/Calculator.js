@@ -2,6 +2,17 @@ import React, { useState } from "react";
 
 const Calculator = () => {
   const [input, setInput] = useState(" ");
+
+  return (
+    <div className="calculator">
+      {/* {Display} */}
+
+      <div className="display">
+        {/* {Placeholder for input/output} */}
+        <input type="text" readOnly />
+      </div>
+    </div>
+  );
 };
 const handleClick = (value) => {
   setInput(input + value);
