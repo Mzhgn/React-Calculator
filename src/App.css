@@ -5,6 +5,10 @@
   align-items: center;
   height: 100vh;
 }
+.calculator {
+  display: inline-block;
+  padding: 20px;
+}
 
 .buttons button {
   width: 100%;
