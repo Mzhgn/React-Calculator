@@ -1,21 +1,5 @@
-import { useState } from "react";
+import React from "react";
+import Calculator from "./components/Calculator";
 import "./App.css";
-
-function App() {
-  const [display, setDisplay] = useState("");
-  const [expression, setExpression] = useState([]);
-
-  const handleClick = (value) => {
-    setDisplay(value);
-    setExpression([...expression, value]);
-  };
-  const handleResult = () => {};
-
-  return (
-    <div>
-      <h1>Hello</h1>
-    </div>
-  );
-}
 
 export default App;
