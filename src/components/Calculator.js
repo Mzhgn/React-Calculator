@@ -2,6 +2,9 @@ import React, { useState } from "react";
 
 const Calculator = () => {
   const [input, setInput] = useState(" ");
+  const handleClick = (value) => {
+    setInput(input + value);
+  };
 
   return (
     <div className="calculator">
@@ -30,9 +33,7 @@ const Calculator = () => {
     </div>
   );
 };
-const handleClick = (value) => {
-  setInput(input + value);
-};
+
 const handleClear = () => {
   setInput(" ");
 };
