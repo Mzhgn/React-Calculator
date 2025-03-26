@@ -5,7 +5,9 @@ const Calculator = () => {
   const handleClick = (value) => {
     setInput(input + value);
   };
-
+  const handleClear = () => {
+    setInput(" ");
+  };
   return (
     <div className="calculator">
       {/* {Display} */}
@@ -34,7 +36,4 @@ const Calculator = () => {
   );
 };
 
-const handleClear = () => {
-  setInput(" ");
-};
 export default Calculator;
