@@ -10,7 +10,10 @@ const Calculator = () => {
   };
   const handleCalculate = () => {
     try {
-    } catch {}
+      setInput(eval(input).toString());
+    } catch (error) {
+      setInput("Error");
+    }
   };
   return (
     <div className="calculator">
