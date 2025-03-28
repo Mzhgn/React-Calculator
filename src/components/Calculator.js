@@ -8,6 +8,10 @@ const Calculator = () => {
   const handleClear = () => {
     setInput(" ");
   };
+  const handleCalculate = () => {
+    try {
+    } catch {}
+  };
   return (
     <div className="calculator">
       {/* {Display} */}
