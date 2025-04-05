@@ -21,7 +21,7 @@ const Calculator = () => {
 
       <div className="display">
         {/* {Placeholder for input/output} */}
-        <input type="text" readOnly />
+        <input type="text" value={input} readOnly />
       </div>
       <div className="buttons">
         <button>1</button>
