@@ -14,8 +14,9 @@ const Calculator = () => {
     } catch (error) {
       setInput("Error");
     }
-    const numbers = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"];
   };
+  const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const operations = ["+", "-", "*", "/"];
   return (
     <div className="calculator">
       {/* {Display} */}
@@ -30,19 +31,12 @@ const Calculator = () => {
             {num}
           </button>
         ))}
-        <button>2</button>
-        <button>3</button>
-        <button>4</button>
-        <button>5</button>
-        <button>6</button>
-        <button>7</button>
-        <button>8</button>
-        <button>9</button>
-        <button>0</button>
-        <button>*</button>
-        <button>C</button>
-        <button>=</button>
-        <button>/</button>
+
+        {operations.map((op) => (
+          <button key={op} onClick={() => handleClick(op)}>
+            {op}
+          </button>
+        ))}
       </div>
     </div>
   );
