@@ -37,6 +37,9 @@ const Calculator = () => {
             {op}
           </button>
         ))}
+
+        <button onClick={handleCalculate}>=</button>
+        <button onClick={handleClear}>C</button>
       </div>
     </div>
   );
