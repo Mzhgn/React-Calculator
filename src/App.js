@@ -5,7 +5,7 @@ import "./App.css";
 const App = () => {
   return (
     <div className="App">
-      <h1>React Calculator </h1>
+      <h1 className="header">React Calculator </h1>
       <Calculator />
     </div>
   );
