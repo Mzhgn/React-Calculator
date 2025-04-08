@@ -25,14 +25,11 @@ const Calculator = () => {
         <input type="text" value={input} readOnly />
       </div>
       <div className="buttons">
-        <button
-          key={num}
-          onClick={() => {
-            handleClick(num);
-          }}
-        >
-          1
-        </button>
+        {numbers.map((num) => (
+          <button key={num} onClick={() => handleClick(num)}>
+            {num}
+          </button>
+        ))}
         <button>2</button>
         <button>3</button>
         <button>4</button>
