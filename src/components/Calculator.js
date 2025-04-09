@@ -3,6 +3,7 @@ import React, { useState } from "react";
 const Calculator = () => {
   const [input, setInput] = useState(" ");
   const handleClick = (value) => {
+    if (value === "." && input.includes(".")) return;
     setInput(input + value);
   };
   const handleClear = () => {
@@ -48,6 +49,7 @@ const Calculator = () => {
         <button onClick={handleClear}>C</button>
         <button onClick={handleBackspace}>⌫</button>
         <button onClick={handlePercentage}>%</button>
+        <button onClick={() => handleClick(".")}>.</button>
       </div>
     </div>
   );
