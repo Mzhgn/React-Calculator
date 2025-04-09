@@ -15,6 +15,12 @@ const Calculator = () => {
       setInput("Error");
     }
   };
+  const handleBackspace = () => {
+    setInput(input.slice(0, -1));
+  };
+  const handlePercentage = () => {
+    setInput((parseFloat(input) / 100).toString());
+  };
   const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
   const operations = ["+", "-", "*", "÷"];
   return (
@@ -40,6 +46,8 @@ const Calculator = () => {
 
         <button onClick={handleCalculate}>=</button>
         <button onClick={handleClear}>C</button>
+        <button onClick={handleBackspace}>⌫</button>
+        <button onClick={handlePercentage}>%</button>
       </div>
     </div>
   );
