@@ -15,6 +15,7 @@
 
 .calculator {
   display: inline-block;
+  width: 30%;
   padding: 20px;
   background-color: #f4f4f4;
   border: 1px solid #ccc;
