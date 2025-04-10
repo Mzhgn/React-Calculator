@@ -20,6 +20,7 @@
   background-color: #f4f4f4;
   border: 1px solid #ccc;
   border-radius: 5px;
+  box-shadow: 10px 5px 5px gray;
 }
 
 .buttons button {
