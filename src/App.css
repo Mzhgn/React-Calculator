@@ -22,6 +22,9 @@
   border-radius: 5px;
   box-shadow: 10px 5px 5px gray;
 }
+.display {
+  height: 20%;
+}
 
 .buttons button {
   width: 60px;

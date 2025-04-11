@@ -30,7 +30,7 @@ const Calculator = () => {
 
       <div className="display">
         {/* {Placeholder for input/output} */}
-        <input type="text" value={input} readOnly />
+        <input type="text" value={input} readOnly className="dispalyText" />
       </div>
       <div className="buttons">
         {numbers.map((num) => (
