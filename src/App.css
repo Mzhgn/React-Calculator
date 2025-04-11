@@ -25,7 +25,12 @@
 .display input {
   height: 35px;
   border: none;
+  outline: none;
   border-radius: 4px;
+  border-bottom: 2px solid #a7aaaa;
+  padding: 8px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
 }
 
 .buttons button {
