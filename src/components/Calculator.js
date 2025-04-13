@@ -23,7 +23,7 @@ const Calculator = () => {
     setInput((parseFloat(input) / 100).toString());
   };
   const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-  const operations = ["+", "-", "*", "÷", "C"];
+  const operations = ["+", "-", "*", "÷"];
   return (
     <div className="calculator">
       {/* {Display} */}
@@ -46,6 +46,7 @@ const Calculator = () => {
         ))}
 
         <button onClick={handleCalculate}>=</button>
+        <button onClick={handleClear}>C</button>
       </div>
     </div>
   );
