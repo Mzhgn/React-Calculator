@@ -48,6 +48,7 @@ const Calculator = () => {
         <button onClick={handleCalculate}>=</button>
         <button onClick={handleClear}>C</button>
         <button onClick={() => handleClick(".")}>.</button>
+        <button onClick={handlePercentage}>%</button>
       </div>
     </div>
   );
