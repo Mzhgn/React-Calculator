@@ -14,7 +14,9 @@
 }
 
 .calculator {
-  display: inline-block;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
   width: 25%;
   padding: 20px;
   background-color: #524e4e;
@@ -38,9 +40,9 @@ input:focus {
 }
 
 .buttons button {
-  width: 60px;
+  width: 50px;
   height: 60px;
-  margin: 5px;
+  margin: 7px;
   font-size: 1.2rem;
   cursor: pointer;
 }
