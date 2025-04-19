@@ -14,15 +14,12 @@
 }
 
 .calculator {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
-  max-width: 300px;
+  width: 320px;
   margin: auto;
   padding: 20px;
   background: #6d5050;
   border-radius: 20px;
-  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 .display input {
