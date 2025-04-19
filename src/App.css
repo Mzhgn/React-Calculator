@@ -42,17 +42,21 @@ input:focus {
   border-bottom: 2px solid #2ecc71;
 }
 
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+}
+
 button {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   font-size: 24px;
   border: none;
   border-radius: 50%;
-  background: linear-gradient(to bottom, #333, #111);
+  background: linear-gradient(135deg, #3e3e3e, #1f1f1f);
   color: white;
-  box-shadow: 0 4px #000;
   cursor: pointer;
-  transition: all 0.2s;
 }
 
 @media (prefers-reduced-motion: no-preference) {
