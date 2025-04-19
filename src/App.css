@@ -22,16 +22,14 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.display input {
-  height: 35px;
-  width: 90%;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  border-bottom: 2px solid #a7aaaa;
-  padding: 7px;
-  font-size: 16px;
-  transition: border-color 0.3s ease;
+.display {
+  text-align: right;
+  padding: 15px;
+  font-size: 32px;
+  color: white;
+}
+input {
+  width: 100%;
 }
 input:focus {
   border-bottom: 2px solid #2ecc71;
