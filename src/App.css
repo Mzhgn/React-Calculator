@@ -53,6 +53,10 @@ button {
 button:active {
   background: #555;
 }
+
+button:nth-child(4n) {
+  background: #ff9500;
+}
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
