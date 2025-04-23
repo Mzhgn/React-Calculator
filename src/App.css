@@ -6,7 +6,9 @@
 }
 
 .calculator {
-  width: 350px;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
   margin: auto;
   padding: 20px;
   background: #6d5050;
