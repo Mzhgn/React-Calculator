@@ -41,11 +41,13 @@ const Calculator = () => {
             </button>
           ))}
         </div>
-        {numbers.map((num) => (
-          <button key={num} onClick={() => handleClick(num)}>
-            {num}
-          </button>
-        ))}
+        <div className="numbers">
+          {numbers.map((num) => (
+            <button key={num} onClick={() => handleClick(num)}>
+              {num}
+            </button>
+          ))}
+        </div>
 
         <button onClick={handleCalculate}>=</button>
         <button onClick={handleClear}>C</button>
