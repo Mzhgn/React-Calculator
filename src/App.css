@@ -45,6 +45,10 @@ input:focus {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+.numbers {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 button {
   width: 70px;
   height: 70px;
