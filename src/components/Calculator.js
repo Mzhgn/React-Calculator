@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 const Calculator = () => {
-  const [input, setInput] = useState(" ");
+  const [input, setInput] = useState("");
   const handleClick = (value) => {
     if (value === "." && input.includes(".")) return;
     setInput(input + value);
@@ -22,21 +22,21 @@ const Calculator = () => {
   const handlePercentage = () => {
     setInput((parseFloat(input) / 100).toString());
   };
-  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-  const operations = ["+", "-", "*", "÷"];
+  const numbers = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "."];
+  const operations = ["÷", "×", "-", "+"];
   return (
     <div className="calculator">
-      {/* {Display} */}
-
       <div className="display">
-        {/* {Placeholder for input/output} */}
         <input type="text" value={input} readOnly />
       </div>
 
       <div className="buttons">
         <div className="operators">
           {operations.map((op) => (
-            <button key={op} onClick={() => handleClick(op)}>
+            <button
+              key={op}
+              onClick={() => (op === "=" ? handleCalculate() : handleClick(op))}
+            >
               {op}
             </button>
           ))}
@@ -49,10 +49,12 @@ const Calculator = () => {
           ))}
         </div>
 
-        <button onClick={handleCalculate}>=</button>
-        <button onClick={handleClear}>C</button>
-        <button onClick={() => handleClick(".")}>.</button>
-        <button onClick={handlePercentage}>%</button>
+        <div className="special-buttons">
+          <button onClick={handleClear}>C</button>
+          <button onClick={handlePercentage}>%</button>
+          <button onClick={() => handleClick("+/-")}>+/-</button>
+          <button onClick={handleCalculate}>=</button>
+        </div>
       </div>
     </div>
   );
