@@ -41,7 +41,10 @@ input:focus {
   grid-template-columns: repeat(4, 1fr);
   gap: 10px;
 }
-
+.operator {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
 button {
   width: 70px;
   height: 70px;
