@@ -32,16 +32,18 @@ const Calculator = () => {
         {/* {Placeholder for input/output} */}
         <input type="text" value={input} readOnly />
       </div>
+
       <div className="buttons">
+        <div className="operators">
+          {operations.map((op) => (
+            <button key={op} onClick={() => handleClick(op)}>
+              {op}
+            </button>
+          ))}
+        </div>
         {numbers.map((num) => (
           <button key={num} onClick={() => handleClick(num)}>
             {num}
-          </button>
-        ))}
-
-        {operations.map((op) => (
-          <button key={op} onClick={() => handleClick(op)}>
-            {op}
           </button>
         ))}
 
