@@ -23,7 +23,7 @@ const Calculator = () => {
     setInput((parseFloat(input) / 100).toString());
   };
   const numbers = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "."];
-  const operations = ["÷", "×", "-", "+"];
+  const operations = ["÷", "×", "-", "+", "="];
   return (
     <div className="calculator">
       <div className="display">
@@ -31,6 +31,22 @@ const Calculator = () => {
       </div>
 
       <div className="buttons">
+        <div className="leftButtons">
+          <div className="special-buttons">
+            <button onClick={handleClear}>C</button>
+            <button onClick={handlePercentage}>%</button>
+            <button onClick={() => handleClick("+/-")}>+/-</button>
+            {/* <button onClick={handleCalculate}>=</button> */}
+          </div>
+          <div className="numbers">
+            {numbers.map((num) => (
+              <button key={num} onClick={() => handleClick(num)}>
+                {num}
+              </button>
+            ))}
+          </div>
+        </div>
+
         <div className="operators">
           {operations.map((op) => (
             <button
@@ -40,20 +56,6 @@ const Calculator = () => {
               {op}
             </button>
           ))}
-        </div>
-        <div className="numbers">
-          {numbers.map((num) => (
-            <button key={num} onClick={() => handleClick(num)}>
-              {num}
-            </button>
-          ))}
-        </div>
-
-        <div className="special-buttons">
-          <button onClick={handleClear}>C</button>
-          <button onClick={handlePercentage}>%</button>
-          <button onClick={() => handleClick("+/-")}>+/-</button>
-          <button onClick={handleCalculate}>=</button>
         </div>
       </div>
     </div>

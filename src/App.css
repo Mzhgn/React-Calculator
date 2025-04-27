@@ -46,19 +46,22 @@ button:active {
 }
 .buttons {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: auto auto auto; */
+  grid-template-columns: 3fr 1fr;
   gap: 10px;
-  padding-top: 10px;
+  padding-top: 20px;
+}
+.special-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 10px;
 }
 .numbers button {
   background: #333;
   color: white;
 }
 .operators button {
-  background: #a5a5a5;
-  color: black;
-}
-.special-buttons button {
   background: #a5a5a5;
   color: black;
 }
