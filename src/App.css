@@ -57,6 +57,10 @@ button:active {
   gap: 10px;
   margin-bottom: 10px;
 }
+.special-buttons button {
+  background: #a5a5a5;
+  color: black;
+}
 .numbers button {
   background: #333;
   color: white;
