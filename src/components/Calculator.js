@@ -35,7 +35,7 @@ const Calculator = () => {
           <div className="special-buttons">
             <button onClick={handleClear}>C</button>
             <button onClick={handlePercentage}>%</button>
-            <button onClick={() => handleClick("+/-")}>+/-</button>
+            <button onClick={() => handleClick("+/-")}>⌫ </button>
             {/* <button onClick={handleCalculate}>=</button> */}
           </div>
           <div className="numbers">
