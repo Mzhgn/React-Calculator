@@ -11,7 +11,7 @@ const Calculator = () => {
   };
   const handleCalculate = () => {
     try {
-      setInput(eval(input.replace("÷", "/")).toString());
+      setInput(eval(input.replace("÷", "/").replace(/×/g, "*")).toString());
     } catch (error) {
       setInput("Error");
     }
@@ -20,6 +20,8 @@ const Calculator = () => {
     setInput(input.slice(0, -1));
   };
   const handlePercentage = () => {
+    if (!input) return;
+
     setInput((parseFloat(input) / 100).toString());
   };
   const numbers = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "."];
@@ -35,7 +37,7 @@ const Calculator = () => {
           <div className="special-buttons">
             <button onClick={handleClear}>C</button>
             <button onClick={handlePercentage}>%</button>
-            <button onClick={() => handleClick("+/-")}>&larr; </button>
+            <button onClick={handleBackspace}>&larr; </button>
             {/* <button onClick={handleCalculate}>=</button> */}
           </div>
           <div className="numbers">
