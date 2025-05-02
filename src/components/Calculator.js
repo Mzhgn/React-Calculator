@@ -19,7 +19,7 @@ const Calculator = () => {
   const handleBackspace = () => {
     setInput(input.slice(0, -1));
   };
-  const handlePercentage = () => {
+  const handlePercentage = (expression) => {
     return eval(expression.replace("%", "/100"));
   };
   const numbers = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "."];
