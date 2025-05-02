@@ -20,9 +20,7 @@ const Calculator = () => {
     setInput(input.slice(0, -1));
   };
   const handlePercentage = () => {
-    if (!input) return;
-
-    setInput((parseFloat(input) / 100).toString());
+    return eval();
   };
   const numbers = ["7", "8", "9", "4", "5", "6", "1", "2", "3", "0", "."];
   const operations = ["÷", "×", "-", "+", "="];
